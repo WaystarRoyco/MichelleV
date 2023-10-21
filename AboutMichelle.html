@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+
     <div class="container">
       <!-- navbar: -->
       <nav class="navbar bg-body-tertiary bg-danger-subtle">
@@ -43,25 +44,34 @@
       </nav>
       <!-- end of nav bar -->
 
-        <div class="container bg-white pb-3 rounded">
+        <div class="container text-center bg-white pb-3 rounded">
         <div class="mt-4">
           <div class="h3 pb-2 mb-4 text-danger border-bottom border-danger">
             Meet Our CEO
           </div>
             <div class="row">
-              <div class="col">
-                <h4>Hello, my name is Michelle. My pronouns are they/her/hers. I am the CEO of Flicks and Femmes: a film recommendation and rating website for the girls and gays. Think of Letterboxd but on steroids and 100x more homosexual.</h4>
-              </div>
               <div class="col ml-5">
-                <div class= "conatiner text-center">
                 <img src="professorpic.png" height="300px">
               </div>
+                <div class="col pt-5">
+                  <h4>Hello, my name is Michelle. My pronouns are they/her/hers. I am the CEO of Flicks and Femmes: a film recommendation and rating website for the girls and gays. Think of Letterboxd but on steroids and 100x more homosexual.</h4>
+                </div>
+              <div class="col">
+                <div class="container position-relative">
+                  <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fclipart-library.com%2Fimages_k%2Fclapper-board-transparent%2Fclapper-board-transparent-10.png&f=1&nofb=1&ipt=e0ffca637236bb374ae427740fef9cdbb726cf65861e8665643befdd63250553&ipo=images" height=300px class="img-static" onmouseenter="myEnterFunction()">
+                 <div class="clapperBoard">
+                    <h2 id="takes">0</h2>
+                </div>
+                </div>
               </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="container bg-white pb-3 rounded">
+
+
+      <div class="container bg-white pb-2 rounded">
         <div class="mt-4">
           <div class="h3 pb-2 mb-4 text-danger border-bottom border-danger">
             Fun Facts
@@ -83,7 +93,11 @@
               <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Farchitizer-prod.imgix.net%2Fmedia%2F1397077582181fbi_080827_01_0201_small_crop.jpg%3Fq%3D60%26auto%3Dformat%2Ccompress%26cs%3Dstrip%26w%3D1680&f=1&nofb=1&ipt=b4e5ee6f2d22751627d9230b24e95f3450a6563a901dbf926ee16ea95ca0a1ae&ipo=images" height="200px">
             </div>
             <div class="text-center">
-            <button type="button" class="btn btn-warning btn-sm" onclick="changeFacts()">Click To Reveal</button>
+            <button type="button" class="btn btn-warning btn-sm" onclick="changeFacts()">Click To Reveal Facts</button>
+          </div>
+          <div class="text-center pt-3">
+            Current Time in New York:
+            <p id="time"></p>
           </div>
       </div>
     </div>
@@ -91,12 +105,12 @@
         
 
     <div class="container bg-white rounded">
-        <div class="mt-4">
+        <div class="mt-4 pb-4">
           <div class="h3 pb-2 mb-4 text-danger border-bottom border-danger">
             Alma Mater
           </div>
           <div class="row">
-            <div class="col">
+            <div class="col text-center">
               <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Forkans.com%2Fwp-content%2Fuploads%2F2019%2F01%2FBrown-University-USA.jpg&f=1&nofb=1&ipt=9a083df0c44499662b5a51224779b487630bd541dde9ba439d97e7d02e924244&ipo=images" height="150px">
           </div>
           <div class="col">

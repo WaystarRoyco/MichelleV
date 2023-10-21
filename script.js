@@ -1,16 +1,19 @@
-const photos = ["photo1.jpg", "photo2.jpg", "photo3.jpg"];
-let currentPhoto = 0;
-const imageElement = document.getElementById("image");
+var imageElement = document.getElementById("image");
+let x = 0;
+setInterval(myTimer, 1000);
 
-function initialize() {
-    setInterval(function() {
-        currentPhoto = (currentPhoto + 1) % photos.length;
-        imageElement.src = photos[currentPhoto];
-    }, 3000);
+function myTimer() {
+  const date = new Date();
+  const EST = { timeZone: "America/New_York" };
+  document.getElementById("time").innerHTML = date.toLocaleTimeString('en-US', EST);
 }
 
 function changeFacts() {
     const factsList = document.getElementById("funFacts");
-    factsList.innerHTML = "<h5><ol><li>I've only been to New York once.</li><li>Honeydew is my favorite fruit. </li><li>Wingstop is my favorite chicken place.</div></li></ol></h5>";
-    factsList.style.color = "Blue";
+    factsList.innerHTML = "<h5><ol><li>I've only been to New York once.</li><li>Honeydew is my favorite fruit. </li><li>Wingstop is my favorite place to get chicken.</div></li></ol></h5>";
+    factsList.style.color = "Red";
 }
+function myEnterFunction() {
+    document.getElementById("takes").innerHTML = x+=1;
+  }  
+
